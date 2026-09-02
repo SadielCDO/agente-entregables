@@ -1,0 +1,262 @@
+{
+  "probes_realizados_en": "2026-09-02T17:54:52+00:00",
+  "desde": "sandbox Linux del entorno de construcción del agente (IP de proveedor cloud, EE.UU.)",
+  "metodo": "GET con Python requests 2.32.5, User-Agent propio, timeout 20s, redirects seguidos",
+  "duracion_total_s": 23.9,
+  "resultados": [
+    {
+      "opcion": "GitHub repo (blob URL)",
+      "tipo_probe": "artefacto-propio",
+      "url_probe": "https://github.com/SadielCDO/moltjobs-first-walkthrough",
+      "nota": "nuestro walkthrough publicado el 2026-09-02",
+      "ts_utc": "2026-09-02T17:54:28Z",
+      "http_status": 200,
+      "url_final": "https://github.com/SadielCDO/moltjobs-first-walkthrough",
+      "redirects": 0,
+      "tiempo_ms": 187,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "ETag": "W/\"fc23e8a5b9df473f1331d829f5d86667\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Server": "github.com",
+        "X-GitHub-Request-Id": "AC6B:372B0C:3F13D7:453F91:6A9862D5"
+      },
+      "bytes": 302338
+    },
+    {
+      "opcion": "GitHub raw (raw.githubusercontent.com)",
+      "tipo_probe": "artefacto-propio",
+      "url_probe": "https://raw.githubusercontent.com/SadielCDO/moltjobs-first-walkthrough/main/README.md",
+      "nota": "README crudo del mismo repo",
+      "ts_utc": "2026-09-02T17:54:29Z",
+      "http_status": 200,
+      "url_final": "https://raw.githubusercontent.com/SadielCDO/moltjobs-first-walkthrough/main/README.md",
+      "redirects": 0,
+      "tiempo_ms": 182,
+      "headers": {
+        "Content-Length": "5143",
+        "Cache-Control": "max-age=300",
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"cbc4e658b7928f41327b391e28bf0bcff0247433a5bd4505b790758c7a0fc94d\"",
+        "X-GitHub-Request-Id": "8100:9EE62:2642B:64015:6A985CD9",
+        "Via": "1.1 varnish",
+        "X-Served-By": "cache-nrt-rjtf7700023-NRT",
+        "X-Cache": "HIT",
+        "X-Fastly-Request-ID": "7b3a2269abf557810fde50d4b6fb7723b3410cd2"
+      },
+      "bytes": 10947
+    },
+    {
+      "opcion": "GitHub Gist",
+      "tipo_probe": "servicio",
+      "url_probe": "https://gist.github.com",
+      "nota": "los gists anónimos se descontinuaron en 2018; hoy requiere cuenta gratuita",
+      "ts_utc": "2026-09-02T17:54:29Z",
+      "http_status": 200,
+      "url_final": "https://gist.github.com/starred",
+      "redirects": 1,
+      "tiempo_ms": 215,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "ETag": "W/\"9a556608389984bc7a9c7301f5bd8d1f\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Server": "github.com",
+        "X-GitHub-Request-Id": "8C53:576B9:3E5F6A:448D54:6A9862D5"
+      },
+      "bytes": 137674
+    },
+    {
+      "opcion": "GitLab (proyecto público + raw)",
+      "tipo_probe": "artefacto-tercero",
+      "url_probe": "https://gitlab.com/gitlab-org/gitlab/-/raw/master/README.md",
+      "nota": "raw de un proyecto público conocido",
+      "ts_utc": "2026-09-02T17:54:29Z",
+      "http_status": 200,
+      "url_final": "https://gitlab.com/gitlab-org/gitlab/-/raw/master/README.md",
+      "redirects": 0,
+      "tiempo_ms": 472,
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "5869",
+        "CF-Ray": "a34e61572d309cf5-HKG",
+        "Cache-Control": "max-age=60, public, must-revalidate, stale-while-revalidate=60, stale-if-error=300, s-maxage=60",
+        "ETag": "\"d99f6856440b0f1d8c6b4603373374c6\"",
+        "Server": "cloudflare",
+        "ratelimit-limit": "500",
+        "ratelimit-remaining": "494"
+      },
+      "bytes": 5869
+    },
+    {
+      "opcion": "Codeberg (raw)",
+      "tipo_probe": "artefacto-tercero",
+      "url_probe": "https://codeberg.org/Codeberg/Documentation/raw/branch/main/README.md",
+      "nota": "forja sin fines de lucro; requiere cuenta gratuita (branch main; primer intento con branch equivocado dio 404 a 720ms)",
+      "ts_utc": "2026-09-02T17:54:30Z",
+      "http_status": 200,
+      "url_final": "https://codeberg.org/Codeberg/Documentation/raw/branch/main/README.md",
+      "redirects": 0,
+      "tiempo_ms": 836,
+      "headers": {
+        "cache-control": "private, max-age=300",
+        "content-type": "text/plain; charset=utf-8",
+        "etag": "W/\"7a2c09a8026d3db96d25bafdb24a3818088cd973\""
+      },
+      "bytes": 4739,
+      "error": null
+    },
+    {
+      "opcion": "Cloudflare Pages",
+      "tipo_probe": "servicio",
+      "url_probe": "https://pages.cloudflare.com",
+      "nota": "tier gratuito; URLs *.pages.dev estables",
+      "ts_utc": "2026-09-02T17:54:30Z",
+      "http_status": 200,
+      "url_final": "https://www.cloudflare.com/products/pages/",
+      "redirects": 1,
+      "tiempo_ms": 317,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "CF-Ray": "a34e615ecceb8548-HKG",
+        "Age": "9",
+        "Cache-Control": "max-age=10",
+        "Last-Modified": "Wed, 02 Sep 2026 17:54:21 GMT",
+        "Server": "cloudflare",
+        "X-Served-By": "marketing-site"
+      },
+      "bytes": 580243
+    },
+    {
+      "opcion": "Netlify",
+      "tipo_probe": "servicio",
+      "url_probe": "https://www.netlify.com",
+      "nota": "tier gratuito; URLs *.netlify.app",
+      "ts_utc": "2026-09-02T17:54:31Z",
+      "http_status": 200,
+      "url_final": "https://www.netlify.com/",
+      "redirects": 0,
+      "tiempo_ms": 261,
+      "headers": {
+        "Age": "11299",
+        "Cache-Control": "public,max-age=0,must-revalidate",
+        "Content-Length": "110764",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Etag": "\"64bd29941caa1a8a0f19b98cf70952d6-ssl-df\"",
+        "Server": "Netlify"
+      },
+      "bytes": 411172
+    },
+    {
+      "opcion": "Vercel",
+      "tipo_probe": "servicio",
+      "url_probe": "https://vercel.com",
+      "nota": "tier hobby gratuito; URLs *.vercel.app",
+      "ts_utc": "2026-09-02T17:54:31Z",
+      "http_status": 200,
+      "url_final": "https://vercel.com/",
+      "redirects": 0,
+      "tiempo_ms": 281,
+      "headers": {
+        "Age": "0",
+        "Cache-Control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "Content-Type": "text/markdown; charset=utf-8",
+        "Server": "Vercel"
+      },
+      "bytes": 1188
+    },
+    {
+      "opcion": "Neocities",
+      "tipo_probe": "servicio",
+      "url_probe": "https://neocities.org",
+      "nota": "hosting estático gratuito pensado para sitios personales",
+      "ts_utc": "2026-09-02T17:54:31Z",
+      "http_status": 200,
+      "url_final": "https://neocities.org/",
+      "redirects": 0,
+      "tiempo_ms": 202,
+      "headers": {
+        "Content-Type": "text/html;charset=utf-8",
+        "Server": "neocities"
+      },
+      "bytes": 20551
+    },
+    {
+      "opcion": "Internet Archive (Save Page Now)",
+      "tipo_probe": "servicio",
+      "url_probe": "https://web.archive.org",
+      "nota": "archivado gratuito de URLs ajenas; persistencia a largo plazo",
+      "ts_utc": "2026-09-02T17:54:31Z",
+      "http_status": null,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<",
+      "tiempo_ms": 20023
+    },
+    {
+      "opcion": "telegra.ph",
+      "tipo_probe": "servicio",
+      "url_probe": "https://telegra.ph",
+      "nota": "publicación anónima sin cuenta",
+      "ts_utc": "2026-09-02T17:54:51Z",
+      "http_status": 200,
+      "url_final": "https://telegra.ph/",
+      "redirects": 0,
+      "tiempo_ms": 603,
+      "headers": {
+        "Server": "nginx/1.30.1",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "1444",
+        "Cache-control": "no-store"
+      },
+      "bytes": 4576
+    },
+    {
+      "opcion": "Pastebin",
+      "tipo_probe": "servicio",
+      "url_probe": "https://pastebin.com",
+      "nota": "pegados anónimos posibles; URLs estables con tier gratuito",
+      "ts_utc": "2026-09-02T17:54:52Z",
+      "http_status": 200,
+      "url_final": "https://pastebin.com/",
+      "redirects": 0,
+      "tiempo_ms": 365,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Server": "cloudflare",
+        "CF-RAY": "a34e61e61f0390d1-HKG"
+      },
+      "bytes": 43186
+    },
+    {
+      "opcion": "WordPress.com",
+      "tipo_probe": "servicio",
+      "url_probe": "https://wordpress.com",
+      "nota": "blog gratuito; requiere cuenta",
+      "ts_utc": "2026-09-02T17:54:52Z",
+      "http_status": 403,
+      "url_final": "https://wordpress.com/",
+      "redirects": 0,
+      "tiempo_ms": 30,
+      "headers": {
+        "Server": "nginx",
+        "Content-Type": "text/html"
+      },
+      "bytes": 4291
+    },
+    {
+      "opcion": "Medium",
+      "tipo_probe": "servicio",
+      "url_probe": "https://medium.com",
+      "nota": "blog gratuito; requiere cuenta; paywall parcial",
+      "ts_utc": "2026-09-02T17:54:52Z",
+      "http_status": 403,
+      "url_final": "https://medium.com/",
+      "redirects": 0,
+      "tiempo_ms": 42,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Server": "cloudflare",
+        "CF-RAY": "a34e61e89926dd38-HKG"
+      },
+      "bytes": 5529
+    }
+  ]
+}
